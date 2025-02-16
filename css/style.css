@@ -219,8 +219,7 @@ header {
   .shrek h2 {
     font-size: 32px;
   }
-  .shrek p {
-    font-size: 22px;
+  .shrek-text {
     text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
