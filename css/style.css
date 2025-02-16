@@ -216,10 +216,11 @@ header {
   }
 }
 @media (max-width: 576px) {
-  .shrek h2 {
-    font-size: 32px;
-  }
   .shrek-text {
     text-align: center;
+  }
+  .shrek h2 {
+    font-size: 30px;
+    line-height: 1;
   }
 }/*# sourceMappingURL=style.css.map */
