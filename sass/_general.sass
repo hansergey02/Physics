@@ -82,6 +82,68 @@ header
         align-items: center
         img
             display: block
+.carousel
+    padding: 80px 0
+    display: flex
+    justify-content: center
+    position: relative
+    &__inner
+        max-width: 750px
+        margin: 0 auto
+        img
+            width: 100%
+            height: auto
+            object-fit: cover
+            display: block
+    .slick-prev, .slick-next
+        border: none
+        background: none
+        position: absolute
+        top: 50%
+        left: -66px
+        transform: translateY(-50%)
+        width: 37px
+        img
+            width: 31px
+            height: 50px
+    .slick-next
+        left: auto
+        right: -66px
+    
+    .slick-dots
+        display: flex
+        justify-content: center
+        li
+            list-style-type: none
+            margin: 0 5px
+.text
+    background: #6e4d3c
+    padding-top: 25px
+    padding-bottom: 25px
+    display: flex
+    justify-content: center
+    .container
+        display: flex
+        align-items: center
+    &__answers
+        max-width: 500px
+    &__list
+        font-size: 28px
+        color: #e8e8e8
+        text-align: center
+    &__first
+        text-align: left
+    &__condishis
+        width: 500px
+        img
+            display: block
+            margin: 0 auto
+            width: 100%
+            height: auto
+
+    
+    
+
 
 
 
