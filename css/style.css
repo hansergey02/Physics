@@ -103,6 +103,98 @@ header {
   display: block;
 }
 
+.carousel {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.carousel__inner {
+  max-width: 750px;
+  margin: 0 auto;
+}
+.carousel__inner img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.carousel .slick-prev, .carousel .slick-next {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 50%;
+  left: -66px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 37px;
+}
+.carousel .slick-prev img, .carousel .slick-next img {
+  width: 31px;
+  height: 50px;
+}
+.carousel .slick-next {
+  left: auto;
+  right: -66px;
+}
+.carousel .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.carousel .slick-dots li {
+  list-style-type: none;
+  margin: 0 5px;
+}
+
+.text {
+  background: #6e4d3c;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.text .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.text__answers {
+  max-width: 500px;
+}
+.text__list {
+  font-size: 28px;
+  color: #e8e8e8;
+  text-align: center;
+}
+.text__first {
+  text-align: left;
+}
+.text__condishis {
+  width: 500px;
+}
+.text__condishis img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 1200px) {
   .menu-item {
     padding-right: 25px;
@@ -140,6 +232,15 @@ header {
   }
   .shrek p {
     font-size: 22px;
+  }
+  .text .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .text__condishis img {
+    width: 300px;
   }
 }
 @media (max-width: 767px) {
@@ -222,5 +323,11 @@ header {
   .shrek h2 {
     font-size: 30px;
     line-height: 1;
+  }
+  .text__list {
+    font-size: 23px;
+  }
+  .text__condishis img {
+    width: 38%;
   }
 }/*# sourceMappingURL=style.css.map */

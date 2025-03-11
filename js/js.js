@@ -6,8 +6,23 @@ hamburger.addEventListener('click', ()=>{
     hamburger.classList.toggle('hamburger-active');
 });
 
-var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 800, // Скорость скролла в миллисекундах
-    offset: 0, // Отступ сверху
-    easing: 'easeInOutCubic' // Анимация скролла
+$(document).ready(function () {
+  $('.carousel__inner').slick({
+    dots: false,
+    speed: 1200,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: '<button type="button" class="slick-prev"><img src="img/chevron-left.png" alt="left"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="img/chevron-right.png" alt="right"></button>',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          infinite: true,
+          dots: true,
+          arrows: false
+        }
+      }
+    ]
+  });
 });
